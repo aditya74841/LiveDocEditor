@@ -95,7 +95,7 @@ const EditorPage = () => {
   }, [readOnly]);
 
   useEffect(() => {
-    const socket = io('http://localhost:9000');
+    const socket = io('https://livedoceditor.onrender.com');
     socketRef.current = socket;
 
     return () => {
