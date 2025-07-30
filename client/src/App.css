@@ -1,0 +1,20 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.ql-toolbar.ql-snow {
+  position: sticky;
+  top: 0;
+  background: #fafafa;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ql-container.ql-snow {
+  height: 100%;
+  min-height: 800px;
+}
