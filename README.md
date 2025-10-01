@@ -1,124 +1,131 @@
-📝 LiveDocEditor
+# 📝 LiveDocEditor
+
 A powerful real-time collaborative document editor that enables seamless teamwork with live synchronization. Built with modern web technologies for a smooth, Google Docs-like experience.
 
-✨ Features
-Real-Time Collaboration - Multiple users can simultaneously edit documents with instant synchronization across all connected clients.
+![JavaScript](https://img.shields.io/badge/JavaScript-95.3%25-yellow)
+![HTML](https://img.shields.io/badge/HTML-3.0%25-orange)
+![CSS](https://img.shields.io/badge/CSS-1.7%25-blue)
 
-Permission Control - Share documents with customizable access levels including read-only and write permissions for enhanced security and control.
+## ✨ Features
 
-Rich Text Editing - Powered by Quill.js for intuitive formatting with support for bold, italics, lists, headings, and custom embeds.
+- **Real-Time Collaboration** - Multiple users can simultaneously edit documents with instant synchronization across all connected clients
+- **Permission Control** - Share documents with customizable access levels including read-only and write permissions
+- **Rich Text Editing** - Powered by Quill.js for intuitive formatting with support for bold, italics, lists, headings, and custom embeds
+- **Shareable Links** - Generate unique document links for easy collaboration without complex setup
+- **Read-Only Mode** - View documents without edit permissions, perfect for presentations or document review
+- **Persistent Storage** - All documents are stored in MongoDB, ensuring data persistence across sessions
+- **Live User Presence** - See who's currently editing the document in real-time
 
-Shareable Links - Generate unique document links for easy collaboration without complex setup.
+## 🛠️ Tech Stack
 
-Read-Only Mode - View documents without edit permissions, perfect for presentations or document review.
+- **Frontend**: React.js
+- **Text Editor**: Quill.js
+- **Real-Time Communication**: Socket.IO
+- **Backend**: Node.js with Express.js
+- **Database**: MongoDB
 
-Persistent Storage - All documents are stored in MongoDB, ensuring data persistence across sessions.
+## 🚀 Getting Started
 
-Live User Presence - See who's currently editing the document in real-time for transparent collaboration.
+### Prerequisites
 
-🛠️ Tech Stack
-Frontend - React.js for building a dynamic and responsive user interface
+- Node.js (v14 or higher)
+- MongoDB installed locally or MongoDB Atlas account
+- npm or yarn package manager
 
-Text Editor - Quill.js for rich text editing capabilities
+### Installation
 
-Real-Time Communication - Socket.IO for bidirectional event-based communication
-
-Backend - Node.js with Express.js for handling API routes and WebSocket connections
-
-Database - MongoDB for scalable document and user data storage
-
-🚀 Getting Started
-Prerequisites
-Node.js (v14 or higher)
-
-MongoDB installed locally or MongoDB Atlas account
-
-npm or yarn package manager
-
-Installation
-Clone the repository
-
-bash
+1. **Clone the repository**
 git clone https://github.com/aditya74841/LiveDocEditor.git
 cd LiveDocEditor
-Install dependencies for both client and server
 
-bash
-# Install server dependencies
+text
+
+2. **Install dependencies for both client and server**
+Install server dependencies
 cd server
 npm install
 
-# Install client dependencies
+Install client dependencies
 cd ../client
 npm install
-Set up environment variables
-
-Create a .env file in the server directory:
 
 text
+
+3. **Set up environment variables**
+
+Create a `.env` file in the **server** directory:
 MONGODB_URI=your_mongodb_connection_string
 PORT=3001
 CLIENT_URL=http://localhost:3000
-Create a .env file in the client directory:
 
 text
+
+Create a `.env` file in the **client** directory:
 REACT_APP_SERVER_URL=http://localhost:3001
-Start the application
 
-bash
-# Start server (from server directory)
+text
+
+4. **Start the application**
+Start server (from server directory)
 npm start
 
-# Start client (from client directory)
+Start client (from client directory)
 npm start
-The application will be available at http://localhost:3000.
 
-📖 Usage
-Creating a Document
-Open the application in your browser
 
-Create a new document or join an existing one using a document ID
 
-Start editing with real-time synchronization
+The application will be available at `http://localhost:3000`
 
-Sharing Documents
-Copy the unique document URL from your browser
+## 📖 Usage
 
-Share the link with collaborators
+### Creating a Document
+1. Open the application in your browser
+2. Create a new document or join an existing one using a document ID
+3. Start editing with real-time synchronization
 
-Set appropriate permissions (read-only or write access)
+### Sharing Documents
+1. Copy the unique document URL from your browser
+2. Share the link with collaborators
+3. Set appropriate permissions (read-only or write access)
+4. Collaborators can join instantly and see live updates
 
-Collaborators can join instantly and see live updates
+### Permission Management
+- **Write Access**: Full editing capabilities with real-time synchronization
+- **Read-Only Access**: View-only mode for document review and presentation
 
-Permission Management
-Write Access: Full editing capabilities with real-time synchronization
+## 🏗️ Architecture
 
-Read-Only Access: View-only mode for document review and presentation
-
-🏗️ Architecture
 The application uses a client-server architecture with WebSocket connections for real-time communication:
 
-Frontend: React components manage UI state and editor interactions
+- **Frontend**: React components manage UI state and editor interactions
+- **Backend**: Express.js handles HTTP requests and Socket.IO manages WebSocket connections
+- **Database**: MongoDB stores document content, metadata, and user permissions
+- **Real-Time Sync**: Socket.IO broadcasts changes to all connected clients instantly
 
-Backend: Express.js handles HTTP requests and Socket.IO manages WebSocket connections
+## 🤝 Contributing
 
-Database: MongoDB stores document content, metadata, and user permissions
-
-Real-Time Sync: Socket.IO broadcasts changes to all connected clients instantly
-
-🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-📄 License
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
 This project is open source and available under the MIT License.
 
-🔗 Links
-GitHub Repository: https://github.com/aditya74841/LiveDocEditor
+## 👨‍💻 Developer
 
-Developer: Aditya Ranjan
+**Aditya Ranjan**
+- GitHub: [@aditya74841](https://github.com/aditya74841)
+- Portfolio: [iamadityaranjan.com](https://iamadityaranjan.com)
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
+
 Built with React, Quill.js, Socket.IO, and MongoDB to provide a seamless collaborative editing experience.
 
-📊 Project Stats
-![JavaScript](https://img.shields.io/badge/JavaScript-95n real-time, anywhere, anytime* ✨
+---
+
+*Empowering teams to collaborate in real-time, anywhere, anytime* ✨
